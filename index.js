@@ -17,9 +17,12 @@ module.exports = class extends Page {
             <h2>${oEntity.title}</h2>
             <p><img src="${oEntity.featured_image}" alt="${oEntity.title}"</p>
             <p>${oEntity.full_description}</p>
+            <p>${oEntity.price}</p>
+            <p>${oEntity.date-available}</p>
             <form action="https://serene-taiga-04277.herokuapp.com/payment" method="post">
             <input type="hidden" name="title" value="${oEntity.title}" />
-            <input type="hidden" name="price" value="21" />
+            <input type="hidden" name="price" value="${oEntity.price}" />
+            <input type="hidden" name="date-available" value="${oEntity.date-available}" />
             <input type="tel" placeholder="enter your number" name="telephone"/>
             <button type="submit">Order now</button>
             </form>
