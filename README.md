@@ -77,4 +77,4 @@ module.exports = class extends Page {
 
 ```
 
-As you hopefully can see it uses lots of little files from the partials folder. You may want to paste the common part of an existing template in there. You may also want to have 1 template for pages and another for an index or overview.
+As you hopefully can see it uses lots of little files from the partials folder. You may want to paste the common part of an existing template in there. You may also want to have 1 template for pages and another for an index or overview.# Mobile-Exam
